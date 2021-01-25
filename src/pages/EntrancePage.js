@@ -4,7 +4,7 @@ import Navbr from "../components/MyNavbar";
 import Sidebar from "../components/Sidebar";
 import TasksAndProblemsModal from "../components/TasksAndProblemsModal";
 import { useState } from "react";
-import { Row } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 
 
 function EntrancePage(props) {
@@ -16,13 +16,13 @@ function EntrancePage(props) {
     }
 
     return (
-        <div className="container p-entrance">
+        <Container className="p-entrance">
             <Navbr activeUser={activeUser} onLogout={onLogout}/>
             <Row>
                 <Sidebar/>  
             </Row>
             <TasksAndProblemsModal show={showModal} handleClose={()=>setShowModal(false)}/>
-        </div>
+        </Container>
     )
 
 }
