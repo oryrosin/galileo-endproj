@@ -1,0 +1,15 @@
+#problems{
+    margin: auto;
+    font-family: 'M PLUS 1p', sans-serif;
+    direction: rtl;
+    width: 100%;
+    text-align: right; 
+}
+
+#problems>img{ 
+    margin: auto;
+    width: 90%;
+}
+.modal-problems{
+    width: 1000px;
+}

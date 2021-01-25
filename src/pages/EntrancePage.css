@@ -1,0 +1,10 @@
+.p-entrance{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Sukot_at_Kibboz_Mehanhim_Beer_Sheva.jpg/525px-Sukot_at_Kibboz_Mehanhim_Beer_Sheva.jpg");
+    background-repeat: no-repeat;
+    background-size: 95%;
+    margin: auto;
+}
+
+body{
+    font-family: 'Assistant', sans-serif !important;
+}

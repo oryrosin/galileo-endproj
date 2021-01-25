@@ -1,0 +1,29 @@
+.wage-enter{
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #343A40;
+    color: white;
+    width: 100%;
+    height: 100px;
+    display: flex; 
+}
+
+.section-wage-enter>h1{
+    margin:10px auto;
+}
+
+.form-file>label{
+    font-size: large;
+}
+.form-group>label.form-label{
+    font-size: large;
+}
+.btn-info{
+    height: 35px;
+    width: 120px;
+    margin: auto;
+}
+.table-head{
+    font-weight: bold;
+}

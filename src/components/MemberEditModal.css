@@ -1,0 +1,9 @@
+#modal-edit-member>tr>td>input{
+    width: 110px;
+    color: black;
+    background-color: #B4D9DF ;
+}
+
+.table{
+    text-align: right;
+}

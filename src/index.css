@@ -1,0 +1,12 @@
+body {
+  font-family: 'Assistant', sans-serif !important;
+  direction: rtl;
+  text-align:  right !important;
+}
+
+#root{
+  direction: rtl;
+  text-align: right;
+  margin: 10px;
+}
+h1{color: white;}

@@ -1,0 +1,51 @@
+#wage-section-form{
+    color: white;
+    background-color: rgba(0, 128, 128, 0.5);
+    padding: 10px;
+}
+#wage-section-form>.form-group>label{
+   padding-right: 30px;
+   
+    
+}
+/* #test-table-xls-button{
+    background-color: #418899;
+    height: 70px;
+    width: 8em;
+    border: none;
+    border-radius: 5%;
+    color: white;
+} */
+#test-table-xls-button {
+    width: 8em;
+    height: 70px;
+    font-family: 'Assistant', sans-serif !important;
+    letter-spacing: 1.5px;
+    color: white;
+    background-color:#418899;
+    border: none;
+    border-radius: 5%;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+  
+#test-table-xls-button:hover {
+    background-color: #45e8ee;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+#wage-section-form>.form-group{
+    margin-bottom: 0.25rem !important;
+}
+
+#formWageFilter{
+    max-height: 30px;
+}
+ #table-to-xls{
+     font-size: 12px;
+     font-family: 'Assistant', sans-serif !important;
+ }

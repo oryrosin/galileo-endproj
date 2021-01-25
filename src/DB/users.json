@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "fname": "Ory",
+        "lname": "Rosin",
+        "email": "ory@ory.com",
+        "pwd": "1234",
+        "role": "user"      
+    },
+    {
+        "id": 3,
+        "fname": "Or",
+        "lname": "Calderon",
+        "email": "or@or.com",
+        "pwd": "1234",
+        "role": "admin"      
+    }
+]
