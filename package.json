@@ -1,5 +1,6 @@
 {
   "name": "galileo",
+  "homepage": "https://oryrosin.github.io/galileo-endproj",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
