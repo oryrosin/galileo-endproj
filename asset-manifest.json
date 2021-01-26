@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/galileo-endproj/static/css/main.01b21c42.chunk.css",
-    "main.js": "/galileo-endproj/static/js/main.9ababef3.chunk.js",
-    "main.js.map": "/galileo-endproj/static/js/main.9ababef3.chunk.js.map",
+    "main.js": "/galileo-endproj/static/js/main.2bee45f7.chunk.js",
+    "main.js.map": "/galileo-endproj/static/js/main.2bee45f7.chunk.js.map",
     "runtime-main.js": "/galileo-endproj/static/js/runtime-main.968d41d1.js",
     "runtime-main.js.map": "/galileo-endproj/static/js/runtime-main.968d41d1.js.map",
     "static/css/2.ae9f1eb3.chunk.css": "/galileo-endproj/static/css/2.ae9f1eb3.chunk.css",
@@ -20,6 +20,6 @@
     "static/css/2.ae9f1eb3.chunk.css",
     "static/js/2.2959af08.chunk.js",
     "static/css/main.01b21c42.chunk.css",
-    "static/js/main.9ababef3.chunk.js"
+    "static/js/main.2bee45f7.chunk.js"
   ]
 }
