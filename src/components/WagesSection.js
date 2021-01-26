@@ -9,12 +9,12 @@ import ReactHTMLTableToExcel from 'react-html-table-to-excel';
 
 
 function WagesSection(props) {
-    const [filter1, setFilter1] = useState("")
-    const [filter2, setFilter2] = useState("")
-    const [filter3, setFilter3] = useState("")
-    const [filter4, setFilter4] = useState("")
-    const [filter5, setFilter5] = useState("2004-12")
-    const [filter6, setFilter6] = useState("2030-01")
+    const [filterFName, setFilterFName] = useState("")
+    const [filterLName, setFilterLName] = useState("")
+    const [filterGamish, setFilterGamish] = useState("")
+    const [filterMaagal, setFilterMaagal] = useState("")
+    const [filterStartDate, setFilterStartDate] = useState("2004-12")
+    const [filterEndDate, setFilterEndDate] = useState("2030-01")
    
     const [wagesData, setWagesData] = useState(null)
     // axios get
@@ -32,11 +32,11 @@ function WagesSection(props) {
     let wagesToShow;
     if (wagesData !== null) {
         const filteredRows = wagesData.filter(wage=> 
-            (wage.maagalHaim? wage.maagalHaim.includes(filter4): true )
-            &&(wage.fName.includes(filter1) || wage.lName.includes(filter1))
-            && (wage.hitagdut? wage.hitagdut.includes(filter2): true)
-            && (wage.gamish? wage.gamish.includes(filter3):true)
-            && (new Date(filter5) < wage.date&& wage.date< new Date(filter6))
+            (wage.maagalHaim? wage.maagalHaim.includes(filterMaagal): true )
+            &&(wage.fName.includes(filterFName) || wage.lName.includes(filterFName))
+            && (wage.hitagdut? wage.hitagdut.includes(filterLName): true)
+            && (wage.gamish? wage.gamish.includes(filterGamish):true)
+            && (new Date(filterStartDate) <= wage.date&& wage.date <= new Date(filterEndDate))
             );
         
 
@@ -72,30 +72,30 @@ function WagesSection(props) {
                 <Form.Group as={Row} controlId="formWageFilter">
                     <Form.Label column sm={2}>מעגל חיים</Form.Label>
                     <Col sm={4}><Form.Control type="text"  
-                        value={filter4} onChange={(e) => setFilter4(e.target.value)} /></Col>
+                        value={filterMaagal} onChange={(e) => setFilterMaagal(e.target.value)} /></Col>
                 </Form.Group>
                 <Form.Group as={Row} controlId="formWageFilter">
                     <Form.Label column sm={2}> חבר/ה</Form.Label>
                     <Col sm={4}><Form.Control type="text"
-                        value={filter1} onChange={(e) => setFilter1(e.target.value)} /></Col>
+                        value={filterFName} onChange={(e) => setFilterFName(e.target.value)} /></Col>
                 </Form.Group>
                 <Form.Group as={Row} controlId="formWageFilter">
                     <Form.Label column sm={2}>התאגדות</Form.Label>
                     <Col sm={4}><Form.Control type="text" 
-                        value={filter2} onChange={(e) => setFilter2(e.target.value)}/></Col>
+                        value={filterLName} onChange={(e) => setFilterLName(e.target.value)}/></Col>
                 </Form.Group>
                 <Form.Group as={Row} controlId="formWageFilter">
                     <Form.Label column sm={2}>מעסיק</Form.Label>
                     <Col sm={4}><Form.Control type="text" 
-                        value={filter3} onChange={(e) => setFilter3(e.target.value)}/></Col>
+                        value={filterGamish} onChange={(e) => setFilterGamish(e.target.value)}/></Col>
                 </Form.Group>
                 <Form.Group as={Row} controlId="formWageFilter">
                     <Form.Label column sm={2}>מתאריך</Form.Label>
                     <Col sm={4}><Form.Control type="month" min="2004-12"
-                        value={filter5} onChange={(e) => setFilter5(e.target.value)}/></Col>
-                    <Form.Label style={{display: filter5? 'block': 'none'}} column sm={2}>עד תאריך</Form.Label>
-                    <Col sm={4} style={{display: filter5? 'block': 'none'}}><Form.Control type="month" min="2004-12"
-                        value={filter6} onChange={(e) => setFilter6(e.target.value)}/></Col>
+                        value={filterStartDate} onChange={(e) => setFilterStartDate(e.target.value)}/></Col>
+                    <Form.Label style={{display: filterStartDate? 'block': 'none'}} column sm={2}>עד תאריך</Form.Label>
+                    <Col sm={4} style={{display: filterStartDate? 'block': 'none'}}><Form.Control type="month" min="2004-12"
+                        value={filterEndDate} onChange={(e) => setFilterEndDate(e.target.value)}/></Col>
                 </Form.Group>
                 
                 <Form.Group as={Row} controlId="formWageFilter">
@@ -143,24 +143,6 @@ function WagesSection(props) {
                 
             </div>
         </>
-
-
-        // <Form id="wage-section-form">
-        //     <Form.Label htmlFor="filter" >התאגדות </Form.Label>
-        //     <input type="text" id="filter-by-hitagdut" 
-        //     // value={filter} onChange={(e)=> setFilter1(e.target.value)}
-        //     /><br/>
-        //     <Form.Label htmlFor="filter" > שם החבר</Form.Label>
-        //     <input type="text" id="filter-by-name" 
-        //     // value={filter} onChange={(e)=> setFilter2(e.target.value)}
-        //     /><br/>
-        //     <Form.Label htmlFor="filter" > גמי"ש/ מעסיק </Form.Label>
-        //     <input type="text" id="filter-by-gamish" 
-        //     // value={filter} onChange={(e)=> setFilter3(e.target.value)}
-        //     /><br/>
-
-        // </Form>
-
     )
 }
 

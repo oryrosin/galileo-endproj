@@ -52,7 +52,7 @@ function EditMembers(props) {
                     <input type="text" placeholder="לא מסננים.." id="filter" value={filter} onChange={(e)=> setFilter(e.target.value)}/>
                 </form>
             </div>
-            <Table responsive striped bordered hover variant="dark">
+            <Table className="members-table" responsive striped bordered hover variant="dark">
                 <thead>
                 <tr>
                     <td>שם</td>
