@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/galileo-endproj/static/css/main.53f47af4.chunk.css",
-    "main.js": "/galileo-endproj/static/js/main.379214db.chunk.js",
-    "main.js.map": "/galileo-endproj/static/js/main.379214db.chunk.js.map",
+    "main.css": "/galileo-endproj/static/css/main.01b21c42.chunk.css",
+    "main.js": "/galileo-endproj/static/js/main.9ababef3.chunk.js",
+    "main.js.map": "/galileo-endproj/static/js/main.9ababef3.chunk.js.map",
     "runtime-main.js": "/galileo-endproj/static/js/runtime-main.968d41d1.js",
     "runtime-main.js.map": "/galileo-endproj/static/js/runtime-main.968d41d1.js.map",
     "static/css/2.ae9f1eb3.chunk.css": "/galileo-endproj/static/css/2.ae9f1eb3.chunk.css",
@@ -12,14 +12,14 @@
     "static/js/3.43c16ba5.chunk.js.map": "/galileo-endproj/static/js/3.43c16ba5.chunk.js.map",
     "index.html": "/galileo-endproj/index.html",
     "static/css/2.ae9f1eb3.chunk.css.map": "/galileo-endproj/static/css/2.ae9f1eb3.chunk.css.map",
-    "static/css/main.53f47af4.chunk.css.map": "/galileo-endproj/static/css/main.53f47af4.chunk.css.map",
+    "static/css/main.01b21c42.chunk.css.map": "/galileo-endproj/static/css/main.01b21c42.chunk.css.map",
     "static/js/2.2959af08.chunk.js.LICENSE.txt": "/galileo-endproj/static/js/2.2959af08.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.968d41d1.js",
     "static/css/2.ae9f1eb3.chunk.css",
     "static/js/2.2959af08.chunk.js",
-    "static/css/main.53f47af4.chunk.css",
-    "static/js/main.379214db.chunk.js"
+    "static/css/main.01b21c42.chunk.css",
+    "static/js/main.9ababef3.chunk.js"
   ]
 }
