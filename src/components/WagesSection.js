@@ -93,8 +93,8 @@ function WagesSection(props) {
                     <Form.Label column sm={2}>מתאריך</Form.Label>
                     <Col sm={4}><Form.Control type="month" min="2004-12"
                         value={filterStartDate} onChange={(e) => setFilterStartDate(e.target.value)}/></Col>
-                    <Form.Label style={{display: filterStartDate? 'block': 'none'}} column sm={2}>עד תאריך</Form.Label>
-                    <Col sm={4} style={{display: filterStartDate? 'block': 'none'}}><Form.Control type="month" min="2004-12"
+                    <Form.Label style={{display: filterStartDate!=="2004-12"? 'block': 'none'}} column sm={2}>עד תאריך</Form.Label>
+                    <Col sm={4} style={{display: filterStartDate!=="2004-12"? 'block': 'none'}}><Form.Control type="month" min="2004-12"
                         value={filterEndDate} onChange={(e) => setFilterEndDate(e.target.value)}/></Col>
                 </Form.Group>
                 
